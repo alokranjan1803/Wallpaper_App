@@ -13,7 +13,7 @@ class ApiOperations {
   static List<CategoryModel> categoryModelList = [];
 
   static const String _apiKey =
-      "aJrBRjOQYV9g4RA49BiC4nfb5xybDgfsFsW2CivxMPCgr0ndFA1aDhJP";
+      "<Api Key";
   static Future<List<PhotosModel>> getTrendingWallpapers() async {
     await http.get(Uri.parse("https://api.pexels.com/v1/curated"),
         headers: {"Authorization": _apiKey}).then((value) {
